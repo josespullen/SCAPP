@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Student Creativity Application</title>
+		<link rel="stylesheet" href="includes/style.css">
+		</head>
+    <body>
+        <div class="container" style="color: white;">
+            <div class="h1" style="text-align: ;">
+            <h1>Edit Profile</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-3" style="colour: white;">
+                    <div class="profile-photo" style="background-color:grey;height: 300px; width: 300px;border: 2px solid green;margin: 45px;margin-left: -105px;">
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-12" style="margin-left: -45px; word-break:keep-all;">
+                        <h4> Upload-Photo</h4>
+                        <label  class="btn btn-block btn-primary">
+                            Browse&hellip; <input type="file" style="display: none;">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3" style="margin-left: 95px; width: 350px; padding-top: 30px">
+                    <form>
+                    <div class="form-group"> <!-- Full Name -->
+                        <label for="full_name_id" class="control-label">Full Name</label>
+                        <input ;" type="text" class="form-control" id="full_name_id" name="full_name" placeholder="John Deer">
+                    </div>
+                    <div class="form-group"> <!-- Contactnumber -->
+                        <label for="Contactnumber" class="control-label">Contactnumber</label>
+                        <input type="text" class="form-control" id="contact-number" name="contact-number" placeholder="Contact number">
+                    </div>
+                    <div class="form-group"> <!-- Email -->
+                        <label for="Email" class="control-label">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="something@example.com">
+                    </div>
+                    <div class="form-group"> <!-- Department Button -->
+                    <label for="Department" class=" control-label">Department</label>
+                    <select class="form-control" id="Department">
+                        <option value="Health and Safety">Health and Safety</option>
+                        <option value="Facilities Management">Facilities Management</option>
+                        <option value="Construction and Infrastructure Network">Construction and Infrastructure Network</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Architecture">Architecture</option>
+                        <option value="Accounts and Finance">Accounts and Finance</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    </div>
+                    <div class="form-group"> <!-- password-->
+                        <label for="password" class="control-label">password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                    </div>
+                    <div class="form-group"> <!-- Confirm password-->
+                        <label for="Confirm_password" class="control-label">Confirm password</label>
+                        <input type="password" class="form-control" id="Confirm-password" name="Confirm-password" placeholder="Confirm password">
+                    </div>
+                    <div class="form-group"> <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+	<!--<div class="Profile">
+     <h1>Edit Profile</h1>
+
+    <hr>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="text-center">
+                <img src="//placehold.it/100" class="avatar img-circle img-responsive"
+                alt="Profile Image">
+                 <h6>Upload Your Photo...</h6>
+
+                <input class="form-control" type="file">
+            </div>
+        </div>
+        edit form column
+        <div class="personal-info">
+
+						 <h3>Personal info</h3>
+
+            <div class="form-group">
+                <label label-default="" class="col-lg-3 control-label label-default">First name:</label>
+                <div class="col-lg-8">
+                    <input class="form-control" value="Jane" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label label-default="" class="col-lg-3 control-label label-default">Last name:</label>
+                <div class="col-lg-8">
+                    <input class="form-control" value="Bishop" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label label-default="" class="col-lg-3 control-label label-default">Contact No:</label>
+                <div class="col-lg-8">
+                    <input class="form-control" value="+06" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label label-default="" class="col-lg-3 control-label label-default">Email:</label>
+                <div class="col-lg-8">
+                    <input class="form-control" value="Example@gmail.com" type="text">
+                </div>
+            </div>
+            <div class="dropdown">
+                <label label-default="" class="col-lg-3 control-label label-default">Department:</label>
+								<div class="col-lg-8">
+								<select>
+									<option value="nill">Select Department</option>
+  								<option value="Accounts and Finance">Accounts and Finance</option>
+  								<option value="Architecture">Architecture</option>
+									<option value="Computer Science">Computer Science</option>
+  								<option value="Construction and Infrastructure Network">Construction and Infrastructure Network</option>
+									<option value="Facilities Management">Facilities Management</option>
+									<option value="Health and Safety">Health and Safety</option>
+									<option value="Human Resources">Human Resources</option>
+									<option value="Marketing">Marketing</option>
+									<option value="Mechanical">Mechanical</option>
+									<option value="Others">Others</option>
+								</select>
+            </div>
+					</div>
+
+            <div class="form-group">
+                <label label-default="" class="col-md-3 control-label label-default">Password:</label>
+                <div class="col-md-8">
+                    <input class="form-control" value="11111122333" type="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label label-default="" class="col-md-3 control-label label-default">Confirm password:</label>
+                <div class="col-md-8">
+                    <input class="form-control" value="11111122333" type="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label label-default="" class="col-md-3 control-label label-default"></label>
+                <div class="col-md-8">
+                    <input class="btn btn-primary" value="Update" type="button"> <span></span>
+
+                    <input class="btn btn-default" value="Cancel" type="reset">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>-->
+</body>
+</html>

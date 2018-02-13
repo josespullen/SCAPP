@@ -1,0 +1,94 @@
+body{
+	background-image: url('images/backgroundImage.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family:book antiqua;
+	colour:white
+	
+}
+
+
+
+.logo{
+	float: left;
+	width: 300px;
+	height: 60px;
+}
+.navbar-container{
+	width:100%;
+	height: 60px;
+	background-color:rgba(0,0,0,.7);
+	margin-bottom: 10px;
+}
+
+.navbar-container ul{
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.navbar-container li{
+	font-family:book antiqua;
+	font-size: 20px;
+    float: right;
+    margin-right: 10px;    
+   }
+
+.navbar-container li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 36px;
+    text-decoration: none;
+}
+
+.navbar-container li a:hover {
+    background-color: #686D79;
+}
+
+.menu-container{
+	float: left;
+	width: 200px;
+	height: 800px;
+	background-color:rgba(0,0,0,.7);
+	}
+
+.menu-container a
+{
+	font-family:book antiqua;
+	color: white;
+}
+.menu-container img{
+	margin-left: 50px;
+	margin-top:5px;
+	height: 100px;
+	width: 100px;
+}
+.content-from-menu{
+	margin-left: 210px;
+	width:100%;
+	height: 800px;
+	background-color:rgba(0,0,0,.8);
+}
+.menu-container h1{
+	padding: 15px;
+	text-align: center;
+	font-size:20px;
+	display: block;
+}
+
+.menu-container h1:hover {
+    background-color: #686D79;
+}
+
+.menu-container h3{
+	text-align: center;
+	color: #FFA700;
+	margin-top: 28px;
+}
+.content-from-menu{
+	text-align: center;
+}
+
+//For Html three--Ideas............................................................
+
+

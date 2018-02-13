@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="includes/style.css">
+	<style>
+		.rating {
+		    float:left;
+		}
+
+		.rating:not(:checked) > input {
+		    position:absolute;
+		    top:-9999px;
+		    clip:rect(0,0,0,0);
+		}
+
+		.rating:not(:checked) > label {
+		    float:right;
+		    width:1em;
+		    padding:0 .1em;
+		    overflow:hidden;
+		    white-space:nowrap;
+		    cursor:pointer;
+		    font-size:200%;
+		    line-height:1.2;
+		    color:#ddd;
+		    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+		}
+
+		.rating:not(:checked) > label:before {
+		    content: '★ ';
+		}
+
+		.rating > input:checked ~ label {
+		    color: #f70;
+		    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+		}
+
+		.rating:not(:checked) > label:hover,
+		.rating:not(:checked) > label:hover ~ label {
+		    color: gold;
+		    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+		}
+
+		.rating > input:checked + label:hover,
+		.rating > input:checked + label:hover ~ label,
+		.rating > input:checked ~ label:hover,
+		.rating > input:checked ~ label:hover ~ label,
+		.rating > label:hover ~ input:checked ~ label {
+		    color: #ea0;
+		    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+		}
+
+		.rating > label:active {
+		    position:relative;
+		    top:2px;
+		    left:2px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container" style="float: left; width:1900px; margin: 0cm 0cm 0cm -8cm;">		
+		<div class="col-md-2"></div>
+		<div class="col-md-8" style="color: White;">
+			<h1>Ideas</h1>
+			<table class="table table-bordered" style="width: 100%;">
+			<thead>
+	      			<tr>
+	        			<th>ID No.</th>
+	        			<th>Title</th>
+	        			<th>Description</th>
+	        			<th>Department</th>
+	        			<th>Status</th>
+	        			<th>Actions</th>
+	      			</tr>
+	    		</thead>
+	    		<tbody>
+	      			<tr>
+	      				<td>1598</td>
+	        			<td>SCAPP</td>
+	        			<td>In the Internet of Things (IoT) era, many objects, sensors and other devices in our surroundings will be connected to networks. This allows us to enjoy convenient and smart lives; however, security countermeasures for such devices are becoming a pressing issue behind the scenes.</td>
+	        			<td>Computing</td>
+	        			<td>open</td>
+	        			<td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Give Feedback</button></td>
+	      			</tr>
+	      			<tr>
+	        			<td>1698</td>
+	        			<td>Mobile</td>
+	        			<td>In the Internet of Things (IoT) era, many objects, sensors and other devices in our surroundings will be connected to networks. This allows us to enjoy convenient and smart lives; however, security countermeasures for such devices are becoming a pressing issue behind the scenes.</td>
+	        			<td>Electronics</td>
+	        			<td>open</td>
+	        			<td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Give Feedback</button></td>
+	      			</tr>
+	      			<tr>
+	        			<td>1343</td>
+	        			<td>TV</td>
+	        			<td>In the Internet of Things (IoT) era, many objects, sensors and other devices in our surroundings will be connected to networks. This allows us to enjoy convenient and smart lives; however, security countermeasures for such devices are becoming a pressing issue behind the scenes.</td>
+	        			<td>Electronics</td>
+	        			<td>open</td>
+	        			<td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Give Feedback</button></td>
+	      			</tr>
+	      			<tr>
+	      				<td>-</td>
+	        			<td>-</td>
+	        			<td>-----------------------------------------------------------------</td>
+	        			<td>-</td>
+	        			<td>-</td>
+	        			<td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Give Feedback</button></td>
+	      			</tr>
+	      			<tr>
+	      				<td>-</td>
+	        			<td>-</td>
+	        			<td>-----------------------------------------------------------------</td>
+	        			<td>-</td>
+	        			<td>-</td>
+	        			<td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Give Feedback</button></td>
+	      			</tr>
+	      			<tr>
+	      				<td>-</td>
+	        			<td>-</td>
+	        			<td>-----------------------------------------------------------------</td>
+	        			<td>-</td>
+	        			<td>-</td>
+	        			<td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Give Feedback</button></td>
+	      			</tr>
+	      			<tr>
+	      				<td>-</td>
+	        			<td>-</td>
+	        			<td>-----------------------------------------------------------------</td>
+	        			<td>-</td>
+	        			<td>-</td>
+	        			<td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Give Feedback</button></td>
+	      			</tr>
+	      			<tr>
+	      				<td>-</td>
+	        			<td>-</td>
+	        			<td>-----------------------------------------------------------------</td>
+	        			<td>-</td>
+	        			<td>-</td>
+	        			<td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Give Feedback</button></td>
+	      			</tr>	      			
+	      			<tr>
+	      				<td>-</td>
+	        			<td>-</td>
+	        			<td>-----------------------------------------------------------------</td>
+	        			<td>-</td>
+	        			<td>-</td>
+	        			<td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Give Feedback</button></td>
+	      			</tr>
+	      			</tbody>
+	  		</table>
+  		</div>
+		<div class="col-md-2"></div>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog" style="color: black;">
+			<div class="modal-dialog modal-lg">
+			<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Send Feedback</h4>
+					</div>
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-sm-4"><br/>
+							<div class="form-group"> <!-- ID No. -->
+		                        <label for="id" class="control-label">ID No.</label>
+		                        <input type="text" class="form-control" id="id" name="id" placeholder="ID No.">
+		                    </div>  
+		                    <div class="form-group"> <!-- Title -->
+		                        <label for="Title" class="control-label">Title</label>
+		                        <input type="text" class="form-control" id="Title" name="Title" placeholder="Title">
+		                    </div>                  
+		                    <div class="form-group"> <!-- Department -->
+		                        <label for="Department" class="control-label">Department</label>
+		                        <input type="text" class="form-control" id="Department" name="Department" placeholder="Department">
+		                    </div>
+		                    <div class="form-group"> <!-- Description -->
+		                        <label for="DescriptionDescription" class="control-label">Description</label>
+		                        <input type="text" class="form-control" id="Department" name="DescriptionDescription" placeholder="Description">
+		                    </div>
+		                    <fieldset class="rating"><h3>Rating</h3>
+							    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+							    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+							    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+							    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+							    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+							</fieldset>
+  
+						</div>
+	                    <div class="col-sm-5"><br/>
+							<div class="input-group">
+								<label for="" class="control-label">Feedback</label>
+							    <textarea class="form-control custom-control" rows="8" style="resize:none"></textarea>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+					<div class="row">
+						<button type="button" class="btn btn-success">Send</button>
+					</div><br/>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

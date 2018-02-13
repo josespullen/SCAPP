@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Student Creativity Application</title>
+
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+
+      <link rel="stylesheet" href="CSS/index.css">
+
+
+</head>
+<body>
+    <div id="header">
+    <div id="logo"><img src=".png"/></div>
+    <div id="res_btn" onclick="show_hide_nav('navbar')" ><img src="button.png"/></div>
+    <ul id="navbar">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Career</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+    <div class="login-wrap">
+    <div class="logo">
+    </div>
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Register</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+			<form  action="UserLoginPage" method="post" id="nameform" onclick="index.html">
+				<div class="group">
+          <br>
+					<label for="user" class="label">Username</label>
+					<input name="username" id="user" type="text" class="input">
+        </br>
+        </div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input name="password" id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<br>
+          <input type="submit" class="button" value="Sign In">
+        </br>
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+			</form>
+			</div>
+			<div class="sign-up-htm">
+			<form method="post" action="UserSignUp">
+        <br>
+        <div class="group">
+					<label for="pass" class="label">First Name</label>
+					<input id="user" type="text" class="input" name="firstname">
+        </div>
+		
+        <div class="group">
+          <label for="pass" class="label">Last Name</label>
+          <input id="user" type="text" class="input" name="lastname">
+          </div>
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input" name="username">
+				</div>
+        <div class="group">
+					<label for="pass" class="input">Type</label>
+					<input type="hidden" name="type" id="ptype" value=" "/>
+          <label>
+          <br>
+			<select id="ppltype">
+				<option value="Student">Student</option>
+				<option value="Subject Expert">Subject Expert</option>
+				<option value="MNC Rep">MNC Rep</option>
+			</select>
+          </br>
+        </div>
+		        <div class="group">
+					<label for="pass" class="input">Department</label>
+					<input type="hidden" name="dept" id="dept" value=" "/>
+          <label>
+          <br>
+			<select id="department">
+				<option value="IT">IT</option>
+				<option value="CIVIL">CIVIL</option>
+				<option value="MECHANICAL">MECHANICAL</option>
+			</select>
+          </br>
+        </div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password" name="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Confirm Password</label>
+					<input id="pass" type="password" class="input" data-type="password" name="confirmpassword">
+				</div>
+        <div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="pass" type="text" class="input" name="email">
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign Up" onclick="validation()">
+        </br>
+        </div>
+			</div>
+		</div>
+		</form>
+	</div>
+</div>
+<script>
+function validation()
+{
+document.getElementById("dept").value=document.getElementById("department").value;
+document.getElementById("ptype").value=document.getElementById("ppltype").value;
+}
+</script>
+</body>
+</html>
